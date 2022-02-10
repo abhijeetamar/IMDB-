@@ -12,16 +12,10 @@ class StreamPlatform(models.Model):
 class Watchlist(models.Model):
     title=models.CharField(max_length=50)
     storyline=models.CharField(max_length=200)
+    platform=models.ForeignKey(StreamPlatform,on_delete=models.CASCADE,related_name="watchlist")
     active=models.BooleanField(default=True)
     created=models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
         return self.title
 
-class Test:
-    def __init__(self):
-        print("constructor execution")
-    def m1(self):
-        print("methode execution")
-t=Test()
-t.m1()

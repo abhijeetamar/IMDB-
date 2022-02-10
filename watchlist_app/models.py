@@ -17,3 +17,6 @@ class Watchlist(models.Model):
     
     def __str__(self):
         return self.title
+    def sum(a,b):
+        return a+b;
+        

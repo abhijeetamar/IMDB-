@@ -17,5 +17,11 @@ class Watchlist(models.Model):
     
     def __str__(self):
         return self.title
-     
-        
+
+class Test:
+    def __init__(self):
+        print("constructor execution")
+    def m1(self):
+        print("methode execution")
+t=Test()
+t.m1()

@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-
+# abhijeet demo
 class StreamPlatform(models.Model):
     name=models.CharField(max_length=30)
     about=models.CharField(max_length=150)
